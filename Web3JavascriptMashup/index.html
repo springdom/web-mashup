@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gmaps&Tracks</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/gmStyle.css">
+    <!-- scripts -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCX8eWkqB3RbQi71AS4j8iTdyuHZQMPvR8&sensor=false"></script>
+    <script src="script/jquery-1.11.0.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="script/gmAPI.js">
+    </script>
+</head>
+
+<body>
+    <!--container Start -->
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">gmaps&Tracks</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">gmAPI</a>
+                        </li>
+                        <li>
+                            <a href="docu.html">Docmentation</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <a name="top"></a>
+        <div id="background">
+            <header class="page-header">
+                <div>
+                    <h1>Google Maps and Tracks
+                        <br/>
+                        <small>Using google maps and koordinates api to display tracks and nearby tracks within New Zealand</small>
+                    </h1>
+                </div>
+            </header>
+            <div class="jumbotron">
+                <div class="row">
+                    <label class="sr" id="Lcoord" for="coord">Search By Coordinates</label>
+                    <input type="text" class="form-control" placeholder="-44.367060170020196, 171.10107421875" id="coord">
+                    <button id="search" class="btn btn-info">Search By Coords</button>
+                    <div id="mapHolder" class="col-lg-3">
+                    </div>
+
+                    <!--Sidebar Start-->
+                    <div id="sidebar" class="col-lg-3">
+                        <button type="button" id="clrMarker" class="btn btn-danger ">Clear Markers
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+
+
+                        <div id="content">
+                            <p>
+                                <strong>Track Name info shown here</strong>
+                                <strong>Track Name:</strong>
+                                <br>
+                                <strong>Distance:</strong>
+                                <br>
+                                <strong>Area:</strong>
+                            </p>
+                        </div>
+                        <h4>View more tracks within this area(100km radius)</h4>
+                        <input type="number" id="max_results" value="1" />1-100
+                        <button type="button" id="ViewResults" class="btn btn-success">View Results</button>
+                        <button id="togSH" class="btn btn-info btn-large">Hide/Show Results
+                            <i class="glyphicon glyphicon-arrow-down"></i>
+                        </button>
+                        <div id="results" class="resData"></div>
+                    </div>
+                    <!--Sidebar Start-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--container End -->
+    <h1>View pictures related to the selected area</h1>
+    <div class="container" id="content">
+        <small>Clicking the picture will send you to the users Flickr page and image</small>
+        <div class="row">
+            <div id="gallery"></div>
+        </div>
+    </div>
+    <a href='#top' id="btp" alt="Back to top">
+        <i class="glyphicon glyphicon-circle-arrow-up"></i>Back to top
+    </a>
+</body>
+
+</html>

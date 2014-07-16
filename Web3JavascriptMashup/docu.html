@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mashup Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="script/flickr/css/js-flickr-gallery.css">
+    <link rel="stylesheet" type="text/css" href="style/docu.css">
+    <!-- scripts -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">gmaps&Tracks</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="index.html">gmAPI</a>
+                </li>
+                <li>
+                    <a href="docu.html">Documentation</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </nav>
+    <div class="container">
+        <header>
+            <div class="page-header">
+                <h1>Javascript Mashup - gmaps&Tracks</h1>
+            </div>
+        </header>
+        <div id="content">
+            <h3>Team Members:</h3>
+            <ul class="list-unstyled">
+                <li>Matthew Taylor</li>
+                <li>Daniel Murphy</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <section>
+                    <h2>
+                        <i class="glyphicon glyphicon-map-marker"></i>Instructions</h2>
+                    <ol>
+                        <li>Click on area in the map(only in New Zealand) or search for specific coordinates in New Zealand</li>
+                        <li>Information on the selected area will be displayed on the right(track name, distance, area name) and pictures of the selected area will be loaded below</li>
+                        <li>You may also view more results within the area by entering the amoount you would like to see in a 100km radius</li>
+                    </ol>
+                    <p>
+                        <strong>NB:</strong>If youre not finding pictures within the area, try and click near NZ national parks or more popular areas</p>
+                    <p>
+                        <strong>NB:</strong>Also it may take a while to load the information on your first visit.</p>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <section id="about">
+                <h2>
+                    <i class="glyphicon glyphicon-question-sign"></i>About our Javascript Mashup</h2>
+                <p>Our Javascript mashup uses the following apis and web services listed below to display tracks in New Zealand and information from the selected track, such as the distance and the area it is located in.</p>
+                <p>The user will be able to click on any part in New Zealand and it will display the nearest track or the track selected. Users can also get more results on the tracks within area of a 100km radius around the selected track. Once the user has selected a track they will be able to view pictures of the area selected.Users can also search for exact coordinates of an area that will also result in the same information.</p>
+                <h4>APIs used</h4>
+                <p>
+                    <small>Clicking on the logo takes you to the api documentation</small>
+                </p>
+                <ul>
+                    <li>Google Maps
+                        <a href="https://developers.google.com/maps/documentation/javascript/tutorial">
+                            <img src="http://commondatastorage.googleapis.com/io-2013/presentations/902/images/maps-logo.png" width="100px" height="26px">
+                        </a>
+                    </li>
+                    <li>Koordinates - Doc Tracks
+                        <a href="https://koordinates.com/layer/753-doc-tracks/">
+                            <img src="https://koordinates.com/media/settings/branding/logo-transparent-1.png">
+                        </a>
+                    </li>
+                    <li>Flickr
+                        <a href="https://www.flickr.com/services/api/" title="FlickrAPI">
+                            <img src="https://s.yimg.com/pw/images/goodies/white-flickr.png">
+                        </a>
+                    </li>
+                </ul>
+                <h4>Framework used</h4>
+                <ul>
+                    <li>Bootstrap</li>
+                </ul>
+                <h4>Libraries used</h4>
+                <ul>
+                    <li>Jquery</li>
+                </ul>
+            </section>
+        </div>
+        <div class="row">
+            <section id="target">
+                <h2>
+                    <i class="glyphicon glyphicon-screenshot"></i>Target Demographic</h2>
+                <p>Our API would mostly attract tourists and travellers around New Zealand, wanting to find tracks and information and pictures of the tracks in the area.</p>
+                <h4></h4>
+            </section>
+        </div>
+        <div class="row">
+            <section>
+                <h2>
+                    <i class="glyphicon glyphicon-wrench"></i>Known Bugs/ Issues</h2>
+                <ul>
+                    <li>searching by coordinates may take longer</li>
+                    <li>Images may flip</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

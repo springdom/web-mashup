@@ -1,0 +1,50 @@
+p {
+    text-align: center;
+    padding: 0px;
+}
+h1 {
+    text-align: center;
+}
+img {
+    width: auto;
+    height: auto;
+}
+.container {
+    width: auto;
+}
+#txt {
+    padding: 10px;
+}
+#mapHolder {
+    width: 1020px;
+    height: 500px;
+}
+#max_results {
+    width: 50px;
+}
+#sidebar {
+    width: 440px;
+    height: 490px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#Lcoord {
+    position: relative;
+    left: 550px;
+}
+#coord {
+    width: 300px;
+    position: relative;
+    left: 550px;
+}
+#search {
+    position: relative;
+    left: -600px;
+    top: -35px;
+}
+#btp {
+    position: fixed;
+    float: right;
+    top: 820px;
+    left: 1600px;
+}
